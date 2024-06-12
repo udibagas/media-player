@@ -1,0 +1,25 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.active {
+  background-color: green;
+  color: white;
+}
+
+.control-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+}
