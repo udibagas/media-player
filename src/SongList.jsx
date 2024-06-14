@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ControlButton from "./ControlButton";
 import SongItem from "./SongItem";
 
@@ -32,17 +32,22 @@ function SongList() {
   const [song, setSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
 
-  player.addEventListener("play", (e) => {
-    setIsPlaying(true);
-  });
+  useEffect(() => {
+    player.addEventListener("play", (e) => {
+      console.log("play");
+      setIsPlaying(true);
+    });
 
-  player.addEventListener("ended", (e) => {
-    setIsPlaying(false);
-  });
+    player.addEventListener("ended", (e) => {
+      console.log("ended");
+      setIsPlaying(false);
+    });
 
-  player.addEventListener("pause", (e) => {
-    setIsPlaying(false);
-  });
+    player.addEventListener("pause", (e) => {
+      console.log("pause");
+      setIsPlaying(false);
+    });
+  }, []);
 
   const changeSong = (item) => {
     setSong(item);
