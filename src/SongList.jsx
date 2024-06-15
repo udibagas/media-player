@@ -5,24 +5,31 @@ import SongItem from "./SongItem";
 const songs = [
   {
     id: 1,
-    title: "Song 1",
-    artist: "Artist 1",
-    thumbnail: "image1.jpeg",
-    audio: "song1.mp3",
+    title: "Tanah Airku",
+    artist: "Artist 3",
+    thumbnail: "image3.jpeg",
+    audio: "tanah-airku.mp3",
   },
   {
     id: 2,
-    title: "Song 2",
+    title: "Rayuan Pulau Kelapa",
     artist: "Artist 2",
     thumbnail: "image2.jpeg",
-    audio: "song2.mp3",
+    audio: "rayuan-pulau-kelapa.aac",
   },
   {
     id: 3,
-    title: "Song 3",
-    artist: "Artist 3",
-    thumbnail: "image3.jpeg",
-    audio: "song3.mp3",
+    title: "Kidung Reksa Bumi",
+    artist: "Artist 1",
+    thumbnail: "image1.jpeg",
+    audio: "kidung-reksabumi.aac",
+  },
+  {
+    id: 4,
+    title: "Lingsir Wengi",
+    artist: "Artist 2",
+    thumbnail: "image2.jpeg",
+    audio: "lingsir-wengi.mp3",
   },
 ];
 
